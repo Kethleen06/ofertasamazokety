@@ -2,14 +2,15 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Promoções da Amazon</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Ofertas da Kety</title>
+<link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-<a href="https://amzn.to/3PmphXm">Clique aqui</a>
+
 <header>
-<div class="logo">PromoOfertas</div>
+
+<div class="logo">Ofertas da Kety</div>
 
 <nav>
 <a href="index.html">Home</a>
@@ -17,62 +18,47 @@
 <a href="categorias.html">Categorias</a>
 <a href="sobre.html">Sobre</a>
 </nav>
+
 </header>
 
+<section class="hero">
 
-<section class="banner">
+<h1>Promoções selecionadas da Amazon 🛍️</h1>
+<p>Produtos com desconto escolhidos pela Kety</p>
 
-<img src="images/banner/banner1.jpg">
-
-<div class="banner-text">
-<h1>As Melhores Promoções da Amazon</h1>
-<p>Ofertas atualizadas todos os dias</p>
-</div>
+<a href="#promocoes" class="btn">Ver promoções</a>
 
 </section>
 
+<div class="categorias-menu">
 
-<section class="produtos">
-
-<h2>Ofertas em Destaque</h2>
-
-<div class="grid-produtos">
-
-<div class="card">
-
-<img src="images/produtos/fone.jpg">
-
-<h3>Fone Bluetooth</h3>
-
-<p class="preco">R$ 89,90</p>
-
-<a class="botao" href="SEU_LINK_AFILIADO">Comprar</a>
+<div class="categoria-btn" data-categoria="todos">Todos</div>
+<div class="categoria-btn" data-categoria="casa">Casa</div>
+<div class="categoria-btn" data-categoria="eletrodomesticos">Eletrodomésticos</div>
+<div class="categoria-btn" data-categoria="tecnologia">Tecnologia</div>
+<div class="categoria-btn" data-categoria="cabelo">Cabelo</div>
+<div class="categoria-btn" data-categoria="saude">Saúde e Bem-estar</div>
+<div class="categoria-btn" data-categoria="gamer">Gamer</div>
 
 </div>
 
+<section class="section" id="promocoes">
 
-<div class="card">
+<h2 class="section-title">🔥 Promoções em destaque</h2>
 
-<img src="images/produtos/notebook.jpg">
-
-<h3>Notebook Gamer</h3>
-
-<p class="preco">R$ 3.599</p>
-
-<a class="botao" href="SEU_LINK_AFILIADO">Comprar</a>
-
-</div>
-
-</div>
+<div class="produtos-grid" id="produtos"></div>
 
 </section>
-
 
 <footer>
 
-<p>Site afiliado à Amazon</p>
+<p>© 2026 Ofertas da Kety | Afiliada Amazon</p>
 
 </footer>
+
+<script src="js/produtos.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/slider.js"></script>
 
 </body>
 </html>

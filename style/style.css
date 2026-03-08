@@ -1,92 +1,96 @@
-body{
-font-family: Arial;
+*{
 margin:0;
-background:#f5f5f5;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
 }
 
+body{
+background:#eaeded;
+color:#111;
+display:flex;
+flex-direction:column;
+min-height:100vh;
+}
+
+/* HEADER AMAZON STYLE */
 
 header{
+background:#131921;
+color:white;
+padding:14px 8%;
 display:flex;
 justify-content:space-between;
-padding:20px;
-background:#111;
-color:white;
+align-items:center;
 }
 
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#ff9900;
+}
+
+nav{
+display:flex;
+gap:20px;
+}
 
 nav a{
 color:white;
-margin-left:20px;
 text-decoration:none;
+font-weight:500;
 }
 
-
-.banner{
-position:relative;
+nav a:hover{
+color:#ff9900;
 }
 
-.banner img{
-width:100%;
-height:350px;
-object-fit:cover;
-}
+/* HERO */
 
-
-.banner-text{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
+.hero{
+background:#232f3e;
 color:white;
+padding:60px 8%;
 text-align:center;
 }
 
-
-.produtos{
-padding:40px;
+.hero h1{
+font-size:36px;
+margin-bottom:10px;
 }
 
-
-.grid-produtos{
-display:grid;
-grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-gap:30px;
+.hero p{
+font-size:18px;
+margin-bottom:20px;
 }
 
-
-.card{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-text-align:center;
-}
-
-
-.card img{
-width:100%;
-border-radius:8px;
-}
-
-
-.preco{
-font-size:20px;
-color:#e47911;
+.btn{
+background:#ff9900;
+color:white;
+padding:12px 25px;
+border-radius:6px;
+text-decoration:none;
 font-weight:bold;
 }
 
+/* CATEGORIAS */
 
-.botao{
-display:inline-block;
-margin-top:10px;
-background:#ff9900;
-color:white;
-padding:10px 20px;
-border-radius:5px;
-text-decoration:none;
+.categorias-menu{
+background:white;
+padding:15px 8%;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+border-bottom:1px solid #ddd;
 }
 
+.categoria-btn{
+padding:8px 14px;
+background:#f2f2f2;
+border-radius:20px;
+cursor:pointer;
+font-size:14px;
+}
 
-.botao:hover{
-background:#e47911;
+.categoria-btn:hover{
 }
