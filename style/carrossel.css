@@ -1,0 +1,22 @@
+.produto {
+  width: 200px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+}
+
+.preco-antigo {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.preco {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
